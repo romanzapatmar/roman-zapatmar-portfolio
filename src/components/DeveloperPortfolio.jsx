@@ -1,6 +1,12 @@
 import React, { useEffect, useState, useRef } from "react";
 import emailjs from "@emailjs/browser"; //for emailjs
 
+const typingTexts = [
+  "Software Engineer",
+  "Backend Developer",
+  "Python Developer"
+];
+
 export default function DeveloperPortfolio() {
   const form = useRef();
   const [showSuccess, setShowSuccess] = useState(false);
@@ -81,12 +87,6 @@ export default function DeveloperPortfolio() {
   ];
 
   const [darkMode, setDarkMode] = useState(true);
-
-  const typingTexts = [
-    "Software Engineer",
-    "Backend Developer",
-    "Python Developer"
-  ];
 
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
